@@ -22,15 +22,33 @@ app.use(cors())
 
 
 
-
-
 //3. Declare variables---------------------------------------------------
+
+let db,
+    dbConnectionString = process.env.DB_STRING,     // grabing var from env file
+    dbName = '',
+    collection
+
+
+
 
 //7. Create gitignore file and push to github---------------------------------------------------
 
+touch .gitignore        - put node_modules into that file 
+
+
+
 //4. Connect to MongoDB - add connection string to .env file---------------------------------------------------
 
+DB_STRING = mongodb+srv://heyblinkin:abelincoln@cluster0.vrj1m.mongodb.net/?retryWrites=true&w=majority
+
+
+
 //5. Add .env file to gitignore---------------------------------------------------
+
+
+
+
 
 //5. Create Port---------------------------------------------------
 
