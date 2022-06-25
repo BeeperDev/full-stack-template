@@ -34,7 +34,7 @@ let db,
 
 //7. Create gitignore file and push to github---------------------------------------------------
 
-touch .gitignore        - put node_modules into that file 
+touch .gitignore        - put node_modules & .env into that file 
 
 
 
