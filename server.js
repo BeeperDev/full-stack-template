@@ -16,7 +16,12 @@ let db,
 
 MongoClient.connect(dbConnectionString)
     .then(client => {
-        console.log('Connected to DB!')
+        console.log(`Connected to ${dbName} DB!`)
         db = client.db(dbName)
         collection = db.collection('movies')
     })
+
+
+app.listen(process.env.PORT || PORT, _ => {
+    console.log(`Server is running!`)
+})
