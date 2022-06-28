@@ -62,15 +62,30 @@ PORT = 8000             - put this in .env file
 
 
 //----Test Mongo and Port Connection---------------------------------------------------
-
+npm run dev
 
 
 
 //6. Set middleware---------------------------------------------------
+app.set('view engine', 'ejs')               // helps us with templating 
+app.use(express.static('public'))           // set up a folder to hold our css, js, fonts, imgs without a link
+app.use(express.urlencoded({ extended:true }))  // helps us parse urls
+app.use(express.json())                     // help express parse json
+app.use(cors())
+
+
+
+
 
 //8. Create Public and Views folders - add main.js and style.css to Public and index.ejs to Views---------------------------------------------------
 
+
+
+
 //9. From root, init local git repo and commit---------------------------------------------------
+
+
+
 
 //10. Create heroku repo---------------------------------------------------
 
