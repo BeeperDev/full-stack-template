@@ -78,16 +78,22 @@ app.use(cors())
 
 
 //8. Create Public and Views folders - add main.js and style.css to Public and index.ejs to Views---------------------------------------------------
+mkdir public
+    touch main.js
+    touch style.css
+mkdir views
+    touch index.ejs
 
 
 
-
-//9. From root, init local git repo and commit---------------------------------------------------
+//9. Add content to main.js, style.css, index.ejs---------------------------------------------------
 
 
 
 
 //10. Create heroku repo---------------------------------------------------
+*take out .env file from .gitignore
+
 
 heroku login
 heroku create simple-rap-api
