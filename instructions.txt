@@ -92,7 +92,7 @@ mkdir views
 
 
 //10. Create heroku repo---------------------------------------------------
-*take out .env file from .gitignore
+*take out .env file from .gitignore b/c heroku needs the .env
 
 
 heroku login
